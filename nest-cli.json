@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/spa-multi-tenant-backend/src",
+  "monorepo": true,
+  "root": "apps/spa-multi-tenant-backend",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/spa-multi-tenant-backend/tsconfig.app.json"
+  },
+  "projects": {
+    "spa-multi-tenant-backend": {
+      "type": "application",
+      "root": "apps/spa-multi-tenant-backend",
+      "entryFile": "main",
+      "sourceRoot": "apps/spa-multi-tenant-backend/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/spa-multi-tenant-backend/tsconfig.app.json"
+      }
+    },
+    "spa-multi-tenant": {
+      "type": "application",
+      "root": "apps/spa-multi-tenant",
+      "entryFile": "main",
+      "sourceRoot": "apps/spa-multi-tenant/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/spa-multi-tenant/tsconfig.app.json"
+      }
+    },
+    "tenancy": {
+      "type": "library",
+      "root": "libs/tenancy",
+      "entryFile": "index",
+      "sourceRoot": "libs/tenancy/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/tenancy/tsconfig.lib.json"
+      }
+    }
+  }
+}
