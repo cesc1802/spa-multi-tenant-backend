@@ -23,6 +23,18 @@
       ],
       "@app/tenancy/*": [
         "libs/tenancy/src/*"
+      ],
+      "@app/config": [
+        "libs/config/src"
+      ],
+      "@app/config/*": [
+        "libs/config/src/*"
+      ],
+      "@app/configurations": [
+        "libs/configurations/src"
+      ],
+      "@app/configurations/*": [
+        "libs/configurations/src/*"
       ]
     }
   }

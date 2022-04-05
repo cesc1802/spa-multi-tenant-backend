@@ -35,6 +35,24 @@
       "compilerOptions": {
         "tsConfigPath": "libs/tenancy/tsconfig.lib.json"
       }
+    },
+    "config": {
+      "type": "library",
+      "root": "libs/config",
+      "entryFile": "index",
+      "sourceRoot": "libs/config/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/config/tsconfig.lib.json"
+      }
+    },
+    "configurations": {
+      "type": "library",
+      "root": "libs/configurations",
+      "entryFile": "index",
+      "sourceRoot": "libs/configurations/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/configurations/tsconfig.lib.json"
+      }
     }
   }
 }

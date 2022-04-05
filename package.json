@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",
+    "@nestjs/config": "2.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/mongoose": "9.0.3",
     "@nestjs/platform-express": "^8.0.0",
@@ -74,7 +75,9 @@
       "<rootDir>/libs/"
     ],
     "moduleNameMapper": {
-      "^@app/tenancy(|/.*)$": "<rootDir>/libs/tenancy/src/$1"
+      "^@app/tenancy(|/.*)$": "<rootDir>/libs/tenancy/src/$1",
+      "^@app/config(|/.*)$": "<rootDir>/libs/config/src/$1",
+      "^@app/configurations(|/.*)$": "<rootDir>/libs/configurations/src/$1"
     }
   }
 }
