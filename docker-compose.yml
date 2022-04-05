@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  mongo:
+    image: library/mongo:4.4.1
+    container_name: spa-multi-tenant
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo-multi-tenant:/data/db
+  mongo-manage-tenant:
+    image: library/mongo:4.4.1
+    container_name: spa-manage-tenant
+    ports:
+      - 27016:27017
+    volumes:
+      - mongo-manage-tenant:/data/db
+volumes:
+  mongo-multi-tenant:
+    driver: local
+  mongo-manage-tenant:
+    driver: local
