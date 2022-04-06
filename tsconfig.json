@@ -35,6 +35,36 @@
       ],
       "@app/configurations/*": [
         "libs/configurations/src/*"
+      ],
+      "@app/tenant": [
+        "libs/tenant/src"
+      ],
+      "@app/tenant/*": [
+        "libs/tenant/src/*"
+      ],
+      "@app/models": [
+        "libs/models/src"
+      ],
+      "@app/models/*": [
+        "libs/models/src/*"
+      ],
+      "@app/common": [
+        "libs/common/src"
+      ],
+      "@app/common/*": [
+        "libs/common/src/*"
+      ],
+      "@app/user": [
+        "libs/user/src"
+      ],
+      "@app/user/*": [
+        "libs/user/src/*"
+      ],
+      "@app/dtos": [
+        "libs/dtos/src"
+      ],
+      "@app/dtos/*": [
+        "libs/dtos/src/*"
       ]
     }
   }

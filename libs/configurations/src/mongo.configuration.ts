@@ -2,7 +2,7 @@ import { ConfigType, registerAs } from '@nestjs/config';
 
 export const mongoConfiguration = registerAs('mongo', () => ({
   uri: process.env.MONGO_URI || 'mongodb://localhost:27017/',
-  dbName: process.env.MONGO_DB_NAME || 'post-rest-local',
+  dbName: process.env.MONGO_DB_NAME || 'tenant-service',
   useFindAndModify: Boolean(process.env.MONGO_FIND_AND_MODIFY) || false,
   useNewUrlParser: Boolean(process.env.MONGO_NEW_URL_PARSER) || true,
   useCreateIndex: Boolean(process.env.MONGO_CREATE_INDEX) || true,
